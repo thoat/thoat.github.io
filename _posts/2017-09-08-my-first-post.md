@@ -1,5 +1,5 @@
 ---
 title: my first post
-layout: default
+layout: post
 ---
 hello world
