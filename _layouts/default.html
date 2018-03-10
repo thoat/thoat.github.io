@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>  <!--head is the hidden part-->
-    <meta charset="UTF-8" />
-    <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>  <!--body is the visible part-->
-    <h1>{{ site.title }}</h1>
-    <h2>{{ page.title }}</h2>
-
-    <p>My Pages:</p>
-    <p><a href="index.html">Home</a></p>
-    <p><a href="kittens.html">Kittens</a></p>
-    <hr /> <!--a HTML tag for printing out a simple horizontal line, or horizontal rule-->
-    
-    <blockquote>
-      <p>And here I stand, with all my lore,<br />
-        Poor fool, no wiser than before.</.>
-    </blockquote>
-    {{ content }}
-  </body>
-</html>
+---
+theme :
+  name : twitter
+---
+{% include JB/setup %}
+{% include themes/twitter/default.html %}
