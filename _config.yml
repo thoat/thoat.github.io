@@ -10,11 +10,11 @@ highlighter: rouge
 #
 title : Thoa's simple site
 author :
-        name : Thoa Ta
-        # email :
-        github : thoat
-        # twitter :
-        # feedburner : nil
+	name : Thoa Ta
+	# email :
+	github : thoat
+	# twitter :
+	# feedburner : nil
 
 # NOTE: If replacing this text line with your own url, you
 # likely want "https://" not "http://"
@@ -28,22 +28,22 @@ markdown : kramdown
 # All Jekyl-Boostrap specific configurations are namespaced
 # into this hash
 JB : 
-        version : 0.3.0
+	version : 0.3.0
 
-        # All links will be namespaced by BASE_PATH if
-        # defined.
-        # Links in your website should always be prefixed with
-        # {{BASE_PATH}} however this value will be dynamically
-        # changed depending on your deployment situation.
-        #
-        # CNAME (https://yourcustomdomain.com)
-        #       DO NOT SET BASE_PATH
-        #       (urls will be prefixed with "/" and work
-        #       relatively)
-        #
-        # GitHub Pages (http://username.github.io)
-        #   DO NOT SET BASE_PATH
-        #   (urls will be prefixed with "/" and work relatively)
+	# All links will be namespaced by BASE_PATH if
+	# defined.
+	# Links in your website should always be prefixed with
+	# {{BASE_PATH}} however this value will be dynamically
+	# changed depending on your deployment situation.
+	#
+	# CNAME (https://yourcustomdomain.com)
+	#       DO NOT SET BASE_PATH
+	#       (urls will be prefixed with "/" and work
+	#       relatively)
+	#
+	# GitHub Pages (http://username.github.io)
+	#   DO NOT SET BASE_PATH
+	#   (urls will be prefixed with "/" and work relatively)
 	#
 	# GitHub Project Pages (http://username.github.io/project-name)
 	#
