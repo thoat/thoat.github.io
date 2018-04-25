@@ -1,14 +1,22 @@
 Convenient code snippets
 
 * To remove git tracking in a local folder: go inside that folder and type
-rm -rf .git 
+$ rm -rf .git 
 (credit: Stack Over Flow)
 
 * To revert a pushed commit:
-git clone <url> my-clone
-cd my-clone
-git log  //to find the commit id
-git revert <commit-id>
-git push
+$ git clone <url> my-clone
+$ cd my-clone
+$ git log  //to find the commit id
+$ git revert <commit-id>
+$ git push
 (credit: https://www.quora.com/How-do-I-revert-a-GitHub-commit-on-the-website-Is-there-a-link-somewhere-to-revert-a-commit-Or-do-I-need-to-do-this-somehow-from-the-command-line-I-never-downloaded-the-fork-to-my-local-machine-though)
 
+* To switch to a different remote branch:
+$ git checkout -b iss53
+Switched to a new branch "iss53"
+
+This is shorthand for:
+$ git branch iss53
+$ git checkout iss53
+(credit: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
