@@ -12,7 +12,7 @@ $ git revert <commit-id>
 $ git push
 (credit: https://www.quora.com/How-do-I-revert-a-GitHub-commit-on-the-website-Is-there-a-link-somewhere-to-revert-a-commit-Or-do-I-need-to-do-this-somehow-from-the-command-line-I-never-downloaded-the-fork-to-my-local-machine-though)
 
-* To switch to a different remote branch:
+* To create AND switch to a different remote branch: (ignore -b if your branch already exists)
 $ git checkout -b iss53
 Switched to a new branch "iss53"
 
