@@ -20,3 +20,14 @@ This is shorthand for:
 $ git branch iss53
 $ git checkout iss53
 (credit: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+
+* To fetch a branch:
+  * Fetch all remote branches: $ git fetch origin
+  * (optional) Pull changes to your current change: $ git pull
+  * Check out the branch you are interested in (this will give you a local working copy of that branch):
+    $ git checkout -b thatbranch origin/thatbranch 
+    OR
+    $ git branch thatbranch origin/thatbranch
+    
+    (BUT DOES THIS ASSUME THAT THIS BRANCH HAS NOT EXISTED IN YOUR LOCAL MACHINE?)
+(credit: https://gist.github.com/markSci5/5916003)
