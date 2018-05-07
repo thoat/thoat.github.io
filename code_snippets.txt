@@ -4,6 +4,10 @@ Convenient code snippets
 $ rm -rf .git 
 (credit: Stack Over Flow)
 
+* To unstage a file and keep it (aka when trying to pull and getting warned that some untracked files will be overwritten):
+$ git reset name_of_file
+(credit: https://stackoverflow.com/a/4308645) -- see there for more details cleaning up afterwards
+
 * To revert a pushed commit:
 $ git clone <url> my-clone
 $ cd my-clone
