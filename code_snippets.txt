@@ -48,3 +48,8 @@ $ git checkout iss53
  * sudo apt-get install <packagename>
  * <packagename> -v or <packagename> --version
  * apt-cache madison <packagename> or apt-cache policy <packagename>
+
+* To completely remove a package on Linux Ubuntu (and bring back the computer's state before its installation):
+   sudo apt-get --purge autoremove <pkgname>
+   Just the package & its dependencies: sudo apt-get --purge remove <pkgname>
+(credit: https://askubuntu.com/a/151943)
