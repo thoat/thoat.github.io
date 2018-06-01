@@ -41,3 +41,10 @@ $ git checkout iss53
  * See the list of remote branches: $ git branch -r
  * To make a remote branch a local branch: $ git checkout that-new-remote-branch
 (credit: https://gist.github.com/blackfalcon/8428401 KEEP REFERRING BACK TO THIS to review GitHub Worklow practice)
+
+
+* To install package, check package's version, etc. in Linux Ubuntu:
+ * sudo apt-get update && apt-get upgrade
+ * sudo apt-get install <packagename>
+ * <packagename> -v or <packagename> --version
+ * apt-cache madison <packagename> or apt-cache policy <packagename>
