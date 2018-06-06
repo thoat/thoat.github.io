@@ -53,3 +53,7 @@ $ git checkout iss53
    sudo apt-get --purge autoremove <pkgname>
    Just the package & its dependencies: sudo apt-get --purge remove <pkgname>
 (credit: https://askubuntu.com/a/151943)
+
+
+* To change colors in the Shell (incomplete solution):
+   https://askubuntu.com/a/466203
