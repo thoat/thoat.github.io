@@ -57,3 +57,8 @@ $ git checkout iss53
 
 * To change colors in the Shell (incomplete solution):
    https://askubuntu.com/a/466203
+   
+* If eslint gives Windows trouble ("Expected LF but found CRLF):
+    add this line to `eslintrc` under `rules` section: 
+       "linebreak-style": 0,
+       "global-require": 0,
