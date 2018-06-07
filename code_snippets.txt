@@ -4,6 +4,11 @@ Convenient code snippets
 $ rm -rf .git 
 (credit: Stack Over Flow)
 
+* To clone a fresh version from GitHub and replace your current git repo:
+$ cd ..
+$ rm -rf <repo-name>
+$ git clone <URL> <repo-name>
+
 * To unstage a file and keep it (aka when trying to pull and getting warned that some untracked files will be overwritten):
 $ git reset name_of_file
 (credit: https://stackoverflow.com/a/4308645) -- see there for more details cleaning up afterwards
