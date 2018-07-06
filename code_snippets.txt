@@ -70,3 +70,7 @@ $ git checkout iss53
 
 * To kill multiple Node processes use this command on windows cmd : 
      $ taskkill /im node.exe /f
+
+* To view version of python packages or modules:
+   $ pip list OR
+   $ pip show <package-name>
