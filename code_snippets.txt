@@ -74,3 +74,8 @@ $ git checkout iss53
 * To view version of python packages or modules:
    $ pip list OR
    $ pip show <package-name>
+   
+ * To find out if some package(s) is/are already installed:
+   $ dpkg -l | grep packagename, OR
+   $ dpkg -l | grep 'packageA\|packageB'  # use backlash to protect the alteration sign
+   
