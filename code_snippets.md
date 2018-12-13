@@ -161,4 +161,12 @@ total 8
 ```
 grep -R Alexandr .
 ```
+
+---
+
+* To sort contents of the file `greatest.txt` and print them:
+
+```
+cat greatest.txt | sort
+```
    
