@@ -110,7 +110,7 @@ sudo apt-get --purge remove <pkgname>
        
 ----------
 
-* To kill multiple Node processes use this command on windows cmd : 
+* To kill multiple Node processes use this command on windows cmd: 
 ```
 $ taskkill /im node.exe /f
 ```
@@ -153,4 +153,12 @@ total 8
  -rw-rw-r--  1 bo bo  78 Aug 21 12:57 u.sh
  ```
  (credit: http://tldp.org/LDP/abs/html/quoting.html#QUOTINGREF)
+ 
+ ---
+ 
+ * To search all files recursively for string "Alexandr" (notice the dot at the end):
+ 
+```
+grep -R Alexandr .
+```
    
