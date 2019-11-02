@@ -74,6 +74,26 @@ $ git checkout iss53
 
 ----------
 
+* **Git config**:
+   1. `--system`: values from file `/etc/gitconfig`. Applied to every user on the system & all their repo's.
+   2. `--global`: values from file `~/.gitconfig` or `~/.config/git/config`. Applied specifically to me & all my repo's on my system.
+   3. `--local`: values from file `.git/config` of the current repo. Applied to that single repo.
+
+   (3) trumps (2). (2) trumps (1).
+   
+   * My system-level config:
+      * Windows: at `C:/Program Files/Git/mingw64/etc/gitconfig`.
+      * (Git for Windows 2.x) another file at `"C:\\ProgramData/Git/config`. This config file can only be changed by `git config -f <file>` as an admin.
+      * WSL: no file yet.
+   
+   * My global-level config:
+      * Windows: at `C:\Users\$USER\.gitconfig`.
+      * WSL: at `~/.gitconfig`.
+   
+(credit: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+
+----------
+
 * To install package, check package's version, etc. in Linux Ubuntu:
 
 ```
