@@ -94,6 +94,20 @@ $ git checkout iss53
 
 ----------
 
+* To update Git on Ubuntu WSL 16.04 (because it came packaged with Git 2.7.4): 
+
+```
+$ sudo apt update
+$ sudo apt -y install make libssl-dev libghc-zlib-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
+$ git clone https://github.com/git/git.git git-source
+$ cd git-source
+$ make prefix=/usr/local all
+```
+
+(credit: https://jimfrenette.com/2018/07/git-updates-for-windows-powershell-and-wsl-ubuntu/)
+
+----------
+
 * To install package, check package's version, etc. in Linux Ubuntu:
 
 ```
