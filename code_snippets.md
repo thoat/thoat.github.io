@@ -101,7 +101,10 @@ $ sudo apt update
 $ sudo apt -y install make libssl-dev libghc-zlib-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
 $ git clone https://github.com/git/git.git git-source
 $ cd git-source
-$ make prefix=/usr/local all
+$ make prefix=/usr/local all # seems to make files only
+$ sudo make prefix=/usr/local install # actually installs stuff?
+
+# restart the terminal to check the new git version: git --version
 ```
 
 (credit: https://jimfrenette.com/2018/07/git-updates-for-windows-powershell-and-wsl-ubuntu/)
