@@ -94,6 +94,55 @@ $ git checkout iss53
 
 ----------
 
+To set up a Git account for work (separate from this personal Git account):
+
+* If push/pull via HTTPS: 
+
+   1. Commits correctly authored: set local git user.email: 
+   
+   ```
+   # inside the work repo
+   $ git config --local user.email "work.email@company.com"
+   $ git config --local user.name "work.name" # optional
+   ```
+   
+   2. Push/pull as the correct user: enter the work username and password when prompted
+      
+* If push/pull via SSH:
+  
+  1. Commits correctly authored (see above)
+  
+  2. Push/pull as the correct user:
+  
+     1. Generate a new pair of SSH key-value: `~/.ssh/id_rsa_companyA`
+     
+     2. Set host in `~/.ssh/config`, or else I'll need to use this lengthy command: `GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa_companyA" git push`. This helps SSH locate the correct key-value pair.
+     
+     ```
+     # Default GitHub
+     Host github.com
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/id_rsa
+
+     # Professional github alias
+     Host newsubdomain
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/id_rsa_companyA
+     ```
+     
+     3. Configure my remote URL using the host set in the previous step: 
+     
+     ```
+     # from git@github.com:name/repo.git
+     $ git remote set-url origin git@newsubdomain:name/repo.git
+     ```
+
+(credit: https://stackoverflow.com/a/33079036)
+
+----------
+
 * To update Git on Ubuntu WSL 16.04 (because it came packaged with Git 2.7.4): 
 
 ```
