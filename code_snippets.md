@@ -141,6 +141,8 @@ To set up a Git account for work (separate from this personal Git account):
 
 (credit: https://stackoverflow.com/a/33079036)
 
+At some point, even with `~/.ssh/config` set with different hosts, I still receive this error: "Bad owner or permissions on /home/name/.ssh/config". I ran this and it fixed the issue: `chmod 600 ~/.ssh/config` (credit: https://serverfault.com/a/253314). Test the connection with `ssh -T git@newsubdomain`.
+
 ----------
 
 * To update Git on Ubuntu WSL 16.04 (because it came packaged with Git 2.7.4): 
